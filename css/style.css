@@ -1,0 +1,268 @@
+/* Browser Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Variables */
+:root {
+    --main-color: #fff;
+    --main-light-color: rgba(255, 255, 255, 0.65);
+    --secondary-color: #ffda69;
+}
+
+/* Main styles */
+
+body {
+    font-family: "Arimo", sans-serif;
+
+    /* Background gradient */
+    background: linear-gradient(
+        300deg,
+        rgba(22, 22, 24, 1) 55%,
+        rgba(42, 42, 43, 1) 100%
+    );
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar-brand {
+    color: var(--main-color);
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    display: none;
+    text-decoration: none;
+    color: var(--main-color);
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 0.8rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    border-color: var(--secondary-color);
+}
+
+.nav-search {
+    margin: 0 1em;
+}
+
+/* Showcase Section Styles */
+.showcase {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Showcase Right Side */
+
+.showcase-slide {
+    letter-spacing: 2px;
+    color: var(--main-color);
+    margin-bottom: 2.2rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 50%;
+}
+
+.showcase-slider {
+    display: block;
+    margin: 0.5em 0;
+    text-decoration: none;
+    color: var(--main-light-color);
+}
+
+.showcase-slider__active {
+    color: var(--main-color);
+    font-size: 1.4em;
+}
+
+/* Showcase Left Side */
+.showcase-left {
+    width: 100%;
+}
+
+.showcase-title {
+    font-size: 2em;
+    font-weight: lighter;
+    margin: 0.3em 0;
+    color: var(--main-color);
+}
+
+.showcase-subtitle {
+    font-weight: lighter;
+    margin: 0.5em 0;
+    font-size: 1.07rem;
+    color: var(--main-light-color);
+    letter-spacing: 0.5px;
+}
+
+.showcase-subtitle__link {
+    color: var(--main-light-color);
+}
+
+/* Showcase shadow */
+.showcase-shadow {
+    display: none;
+    position: absolute;
+    top: -11.6%;
+    left: 17%;
+    z-index: -1;
+    width: 800px;
+}
+
+/* Cards Style */
+.cards-container {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: black;
+    color: var(--main-color);
+}
+
+.events {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.card__title {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.card__subtitle {
+    padding: 1rem 0;
+    color: var(--main-light-color);
+}
+
+.card__subtitle {
+    color: var(--main-light-color);
+}
+
+.news {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.news-content {
+    margin-bottom: 1.5em;
+}
+
+.news-title {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0.3em 0 0.2em 0;
+}
+
+.news-subtitle {
+    margin-bottom: 1em;
+    color: var(--main-light-color);
+    letter-spacing: 0.5px;
+}
+
+.news-read-more {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Responsive */
+@media (min-width: 500px) {
+    /* News Card */
+    .news {
+        grid-template-columns: 25% 70%;
+        grid-column-gap: 2rem;
+    }
+    .news-title {
+        margin: 0;
+    }
+
+    .events {
+        grid-template-columns: 50% 50%;
+    }
+    .card:nth-child(2) {
+        padding: 2.5rem 0 0 0.5em;
+    }
+}
+
+@media (min-width: 900px) {
+    /* Navbar */
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .nav-item {
+        display: inline-block;
+    }
+    .nav-menu {
+        display: none;
+    }
+
+    /* Showcase */
+    .showcase {
+        flex-direction: row;
+        margin-top: 5.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .showcase-right {
+        margin-top: 2.2rem;
+        width: 100%;
+    }
+    .showcase-title {
+        font-size: 4rem;
+    }
+    .showcase-subtitle {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+    /* Card Style */
+    .cards-container {
+        grid-template-columns: 50% 50%;
+        margin-top: -3.2em;
+    }
+}
+
+@media (min-width: 1300px) {
+    /* Card Style */
+    .cards-container {
+        background-color: rgba(0, 0, 0, 0.781);
+    }
+    /* Showcase shadow */
+    .showcase-shadow {
+        display: block;
+    }
+}

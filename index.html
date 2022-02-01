@@ -1,0 +1,171 @@
+<!-- HTML Declaration-->
+<!DOCTYPE html>
+<!-- Languale English -->
+<html lang="en">
+    <head>
+        <!-- Unicode Carset UTF-8 Standart -->
+        <meta charset="UTF-8" />
+
+        <!-- IE Compitable -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- Viewport for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Page title -->
+        <title>Aer Landing Page</title>
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/images/background-image.png"
+        />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- External Stylesheet-->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar container">
+            <!-- Navbar Brand -->
+            <p class="navbar-brand">Aer</p>
+
+            <!-- Navbar links -->
+            <div class="nav">
+                <a class="nav-item" href="#home">Home</a>
+                <a class="nav-item" href="#product">Product</a>
+                <a class="nav-item" href="#about">About</a>
+                <a class="nav-item" href="#location">Location</a>
+                <a class="nav-item" href="#cart">Cart</a>
+                <!-- Search SVG icon -->
+                <a class="nav-search" href="#home">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-search"
+                        width="28"
+                        height="28"
+                        viewBox="0 0 24 24"
+                        stroke-width="3"
+                        stroke="#ffffff"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                </a>
+                <!-- Hamburger Menu -->
+                <svg
+                    class="nav-menu"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-menu-2"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+            </div>
+        </nav>
+
+        <!-- Showcase Section -->
+        <div class="container">
+            <!-- Showcase -->
+            <div class="showcase">
+                <!-- Showcase Right side -->
+                <div class="showcase-right">
+                    <p class="showcase-slide">/ 01</p>
+                    <a
+                        class="showcase-slider showcase-slider__active"
+                        href="#work-collection"
+                    >
+                        Work Collection
+                    </a>
+                    <a class="showcase-slider" href="#active-collection">
+                        Active Collection
+                    </a>
+                    <a class="showcase-slider" href="#travel-collection">
+                        Travel Collection
+                    </a>
+                </div>
+                <!-- Showcase Right side -->
+                <div class="showcase-left">
+                    <h1 class="showcase-title">Work <br />Anywhere</h1>
+                    <p class="showcase-subtitle">
+                        Introducing the work collection, a line of minimalistic
+                        bags designed for a
+                        <a href="#link" class="showcase-subtitle__link">
+                            new generation specifically for the modern
+                            professional.
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Showcase Shadow -->
+            <img
+                class="showcase-shadow"
+                src="./images/background-image.png"
+                alt="shadow image"
+            />
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-container">
+            <!-- Events Card -->
+            <div class="events">
+                <!-- Card -->
+                <div class="card">
+                    <h4 class="card__title">Events</h4>
+                    <p class="card__subtitle">
+                        Pop - up @ Steven Allen Fillmore <br />
+                        SF - Sat, August 12 / 5-8PM
+                    </p>
+                </div>
+                <!-- Card -->
+                <div class="card">
+                    <br />
+                    <p class="card__subtitle">
+                        Pop - up @ Steven Allen Fillmore <br />
+                        SF - Sat, August 12 / 5-8PM
+                    </p>
+                </div>
+            </div>
+            <!-- News Card -->
+            <div class="news">
+                <!-- News Card image-->
+                <img
+                    class="news-card-image"
+                    src="./images/Profile.jpg"
+                    alt="profile card"
+                />
+                <!-- News Card Content-->
+                <div class="news-content">
+                    <h4 class="news-title">News</h4>
+                    <p class="news-subtitle">
+                        A fresh take on our Ativity Collection, just in time for
+                        spring. Aviable in Black
+                    </p>
+                    <a class="news-read-more" href="#read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
