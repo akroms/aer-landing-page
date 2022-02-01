@@ -4,7 +4,9 @@
 
 ## Technologies
 
-- HTML and vanilla CSS
+- HTML
+- CSS 
+- JavaScript
 
 ## Tools 
 
