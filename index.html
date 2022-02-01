@@ -46,7 +46,7 @@
                 <a class="nav-item" href="#cart">Cart</a>
                 <!-- Search SVG icon -->
                 <a class="nav-search" href="#home">
-                    <svg
+                    <svg class="search" onmouseenter="hoverOver();" onmouseleave="leave();"
                         xmlns="http://www.w3.org/2000/svg"
                         class="icon icon-tabler icon-tabler-search"
                         width="28"
@@ -64,7 +64,7 @@
                     </svg>
                 </a>
                 <!-- Hamburger Menu -->
-                <svg
+                <svg contextmenu="search-icon"
                     class="nav-menu"
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-menu-2"
@@ -91,7 +91,7 @@
             <div class="showcase">
                 <!-- Showcase Right side -->
                 <div class="showcase-right">
-                    <p class="showcase-slide">/ 01</p>
+                    <p class="showcase-slide">/&nbsp;01</p>
                     <a
                         class="showcase-slider showcase-slider__active"
                         href="#work-collection"
@@ -137,6 +137,11 @@
                     <p class="card__subtitle">
                         Pop - up @ Steven Allen Fillmore <br />
                         SF - Sat, August 12 / 5-8PM
+                        <div class="square">
+                            <span class="card__square card__square--selected "></span>
+                            <span class="card__square"></span>
+                            <span class="card__square"></span>
+                        </div>
                     </p>
                 </div>
                 <!-- Card -->
@@ -167,5 +172,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- External Scripting File -->
+        <script src="./js/script.js"></script>
     </body>
 </html>
