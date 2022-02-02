@@ -66,6 +66,10 @@ body {
     border-bottom: 2px solid transparent;
 }
 
+.search:hover {
+    stroke: #ffda69;
+}
+
 /* Navbar Toggle */
 /* Animation for navbar slide */
 @keyframes slideOpen {
@@ -93,7 +97,7 @@ body {
         right: 0;
         z-index: 1;
         background-color: rgb(14, 14, 14);
-       
+
         display: flex;
         flex-flow: column-reverse;
         justify-content: center;
@@ -366,3 +370,5 @@ body {
         display: block;
     }
 }
+
+
